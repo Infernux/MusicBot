@@ -18,6 +18,7 @@ class ConfigDefaults:
     auto_summon = True
     auto_playlist = True
     debug_mode = False
+    force_ignore_non_voice = True
 
     options_file = 'config/options.ini'
     blacklist_file = 'config/blacklist.txt'
