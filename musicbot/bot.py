@@ -825,7 +825,7 @@ class MusicBot(discord.Client):
             raise CommandError("Please quote your search query properly.")
 
         service = 'youtube'
-        items_requested = 1
+        items_requested = 5
         max_items = 10  # this can be whatever, but since ytdl uses about 1000, a small number might be better
         services = {
             'youtube': 'ytsearch',
@@ -1167,7 +1167,7 @@ class MusicBot(discord.Client):
         message = '\n'.join(lines)
         return Response(message, delete_after=30)
 
-    @owner_only  # TODO: improve this (users only clean up theirs, arg for all messages, etc, more control)
+    #@owner_only  # TODO: improve this (users only clean up theirs, arg for all messages, etc, more control)
     async def cmd_clean(self, message, channel, author, amount):
         """
         Usage:
