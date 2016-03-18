@@ -1,0 +1,6 @@
+.idea/
+audio_cache/
+config/options.ini
+
+*.pyc
+config/permissions.ini
